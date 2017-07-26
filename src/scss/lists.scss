@@ -1,0 +1,63 @@
+.view-header_twoCow {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    height: 350rpx;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 10px;
+    @include gradient(#2d4d7d, #246cA3);
+    color: #efefef;
+    .header_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        padding-right: 15px;
+        line-height: 2.2;
+    }
+    .header_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .desc_hd {
+        font-size: $font_lar;
+        margin-top: -5px;
+    }
+    .desc_bd {
+        font-size: $font_mid;
+    }
+    // .header_desc :not(:last-child) .desc_bd {
+    //     border-bottom: 4px solid #efefef;
+    // }
+}
+
+.lists-section {
+    .list-items {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 10px 10px;
+        border-bottom: 10rpx solid $border_color;
+    }
+    .cText {
+        font-size: 30rpx;
+        color: #98C8DA;
+        // width: 25%;
+        // text-align: right;
+    }
+    .title_desc {
+        font-size: $font_min;
+        color: $font_desc;
+    }
+    .item-hd {
+        line-height: 1.6;
+    }
+    .item-bd {
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+}

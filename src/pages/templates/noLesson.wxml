@@ -1,0 +1,3 @@
+<template name="noLesson">
+   <text>暂无课程，请添加</text>
+</template>

@@ -1,0 +1,17 @@
+<!--pages/newActical/newActical.wxml-->
+<view class="container">
+    <!--<text class="headTitle">自定义故事</text>-->
+    <view class="newActical">
+        <view class="section">
+            <input type="text" name="courseAddr" placeholder="填写故事主题" />
+        </view>
+        <view class="section">
+            <textarea placeholder="填写故事序章" auto-focus/>
+        </view>
+        <view class="section">
+             <view class="inline">总共<input type="number" placeholder="5" />弹</view>
+        </view>
+        <button class="btn-default">生成故事</button>
+       
+    </view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/user/user.wxss */
+.content{
+   /*background: #fff;*/
+   height:100%;
+}
+.userinfo {
+  display: flex;
+  /*flex-grow: 4;*/
+  height:100px;
+  padding:50px 0;
+  align-items: center;
+  background: #fff;
+ flex-direction: column;
+  /*background:url("http://www.yunright.com/statics/images/apply_official.jpg") no-repeat;
+  background-size:cover;*/
+  /*height:100%;*/
+  width:100%;
+}
+.userinfo-nickname {
+   color: #999;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border:3px solid #fff;
+  z-index: 2;
+}
+
+
+
+.usermotto .section{
+  padding:0 20px;
+}

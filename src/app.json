@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/user/user",
+        "pages/newActical/newActical",
+        "pages/joinActical/joinActical"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#2d4d7d",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "故事接龙Pro",
+        "backgroundTextStyle": "light",
+        "backgroundColor": "#000",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "color": "#ccc",
+        "selectedColor": "#98C8DA",
+        "borderStyle": "white",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "故事接龙",
+                "iconPath": "images/iconfont-list.png",
+                "selectedIconPath": "images/iconfont-list-active.png"
+            },
+            {
+                "pagePath": "pages/newActical/newActical",
+                "text": "自定义故事",
+                "iconPath": "images/iconfont-order-default.png",
+                "selectedIconPath": "images/iconfont-order.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我",
+                "iconPath": "images/iconfont-user.png",
+                "selectedIconPath": "images/iconfont-user-active.png"
+            }
+        ]
+    }
+}

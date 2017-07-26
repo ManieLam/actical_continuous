@@ -1,0 +1,13 @@
+<template name="navbar" >
+    <view id="navbar">
+        <text class="item {{currentTab==index ? 'active' : ''}}"
+              wx:for="{{navbar}}"
+              wx:key="{{index}}"
+              data-index="{{index}}"
+              bindtap="onNavbarTap"
+        >
+            {{item}}
+        </text>
+    </view>
+    <!--<view style="height:80rpx;"></view>-->
+</template>

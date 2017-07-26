@@ -1,0 +1,27 @@
+<!--pages/joinGame/joinGame.wxml-->
+<view class="container">
+    <view class="header">
+        <text>{{list_s_dtl.title}}</text>
+        <view class="small">—— 连载至{{dtl_len}} /{{list_s_dtl.total}}回 ——</view>
+    </view>
+    
+    <view class="section_header">
+        <view class=" font_w600">序章</view>
+        <text class="">{{list_s_dtl.describe}}</text>
+    </view>
+    <view class="section" wx:for="{{list_s_dtl.partsDtl}}" wx:for-index="indx">
+        <view>第{{indx+1}}回</view>
+        <view>
+            {{list_s_dtl.partsDtl[indx].dtl}}
+        </view>
+    </view>
+    <view class="section" wx:if="{{isNoEnd}}">
+         <view>第{{dtl_len+1}}回</view>
+         <!--最幸福的事是找到主人和咬三狗。-->
+        <form  bindsubmit="submitPart">
+            <textarea placeholder="续写这个故事..." maxlength="15" name="newtext" value="{{textValue}}"/>
+            <button class="btn_small" form-type="submit">发表</button>
+        </form>
+    </view>
+      <view wx:if="{{!isNoEnd}}">—— 故事已完结 ——</view>
+</view>

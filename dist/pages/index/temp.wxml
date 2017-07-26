@@ -1,0 +1,23 @@
+ <scroll-view class="scroll-list" scroll-x="true" style="height:100%" bindscrolltolower="lower">
+        <view class="swiper-tab">
+            <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">简单</view>
+            <!--<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">困难</view>-->
+            <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">自定义</view>
+            
+             <!--<view class="swiper-tab-list">自定义故事</view>-->
+        </view>
+        <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">  
+            <!-- 简单 -->  
+            <swiper-item>  
+                <template is="scrollList" data="{{...list_s_tp}}"/>
+            </swiper-item>  
+             <!--困难   
+            <swiper-item>  
+                <template is="scrollList" data="{{...list_h_tp}}"/>
+            </swiper-item>  -->
+            <!-- 自定义 -->  
+            <swiper-item>  
+                <template is="scrollList" data="{{...list_sf_tp}}"/>
+            </swiper-item>  
+        </swiper> 
+    </scroll-view>

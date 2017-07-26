@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+    // align-self: center;
+    align-items: center;
+}
+
+.flex-d_column {
+    flex-direction: column;
+}
+
+.flex-t_center {
+    justify-content: center;
+}
+
+.flex-t_between {
+    justify-content: space-between;
+}
+
+.flex-t_around {
+    justify-content: space-around;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.flex-grow-4 {
+    flex-grow: 4;
+}

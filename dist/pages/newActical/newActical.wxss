@@ -1,0 +1,35 @@
+/* pages/newActical/newActical.wxss */
+
+.newActical {
+    margin: 0 10px;
+    /*background:#fff;*/
+    /*box-shadow: 4rpx 4rpx 4rpx #aaa;*/
+}
+
+.newActical .section {
+    background: #fff;
+    /*box-shadow: 4rpx 4rpx 4rpx #aaa;*/
+    margin: 10px 10px 0;
+    padding: 10px;
+    line-height: 80rpx;
+    border-bottom: 10rpx solid #eaeaea;
+}
+
+.newActical .section:first {}
+
+.inline {
+    display: flex;
+    vertical-align: middle;
+}
+
+.inline input {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.btn-default {
+    width: 80%;
+    background: #8FBBCC;
+    color: #fff;
+    margin-top: 50rpx;
+}

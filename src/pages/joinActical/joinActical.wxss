@@ -1,0 +1,28 @@
+/* pages/joinGame/joinGame.wxss */
+.header{
+    height:150rpx;
+    padding:20px 0;
+    font-size: 36rpx;
+    line-height: 80rpx;
+    text-align: center;
+    width:100%;
+    background: #fff;
+    box-shadow: 4rpx 4rpx 4rpx #aaa;
+}
+.small{font-size:28rpx;}
+.font_w600{
+    font-weight: 600
+}
+.section{
+  background:#fff;
+  width:85%;
+  padding:10px;
+  margin-bottom: 10px;
+  line-height:60rpx;
+}
+.section_header{
+    margin:20px 0 10px;
+}
+.btn_small{line-height: 60rpx;
+font-size:30rpx;
+background:#72D5D0;color:#fff}

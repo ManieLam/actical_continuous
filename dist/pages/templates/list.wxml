@@ -1,0 +1,42 @@
+<template name="list">
+    <view class="usermotto">
+        <view class="section " wx:for="{{listTitle}}" wx:for-index="idx" wx:for-item="item" wx:key="">
+            <text class="cTitle">{{item.title}}</text>
+            <text class="cText">{{item.text}}</text>
+        </view>
+    </view>
+</template>
+
+
+
+<template name="list-section">
+    <view class="list-items " wx:for="{{listTitle}}" wx:for-index="idx" wx:for-item="item" wx:key="" bindtap="joinGames">
+        <view class="cTitle item-hd">
+            <view class="cTitle">{{item.title}}</view>
+            <view class="title_desc">20小时前</view>
+        </view>
+        <view class="cText item-bd">
+             {{item.text}} <view class="icon icon-in"></view>
+        </view> 
+       
+    </view>
+</template>
+
+
+
+<template name="scrollXList">
+    <scroll-view scroll-x="true" class="scroll-view_H">
+        <!--<view class="addSelfType scroll-view-item_H" bindtap="addSelfType" wx:if="{{currentTab==0}}">
+        <image src="../../../assets/images/iconfont-t-add.png"></image>
+        <t>自定义</t>
+    </view>
+    -->
+    <view class="bg_1 scroll-view-item_H {{order.pattern==1 ? 'active' : ''}}" data-current="1" bindtap="choosePattern">1</view>
+    <view class="bg_2 scroll-view-item_H {{order.pattern==2 ? 'active' : ''}}" data-current="2" bindtap="choosePattern">2</view>
+    <view class="bg_3 scroll-view-item_H {{order.pattern==3 ? 'active' : ''}}" data-current="3" bindtap="choosePattern">3</view>
+    <view class="bg_1 scroll-view-item_H {{order.pattern==4 ? 'active' : ''}}" data-current="4" bindtap="choosePattern">4</view>
+</scroll-view>
+</template>
+<template is="emptyList">
+<text>{{message}}</text>
+</template>

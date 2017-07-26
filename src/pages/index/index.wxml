@@ -1,0 +1,36 @@
+<!-- index.wxml -->
+<import src="../templates/list.wxml"  />
+<import src="../templates/navbar.wxml"  />
+<view class="m-container">
+    <view class="view-header_twoCow " bindtap="bindViewTap">
+        <view class="header_title">
+            续写故事——
+            <view>
+            无字数限制 | 自由发挥 </view>
+        </view>
+        <view class="header_desc">
+            <view wx:for="{{dataCount}}" wx:for-item="items">
+                <view class="desc_hd">{{items.counts}}</view>
+                <view class="desc_bd">{{items.title}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- End 头部 -->
+    <template is="navbar" data="{{navbar:navbar,currentTab:currentTab}}"></template>
+    <!-- End 导航 -->
+    <view class="itemOrderBox">
+        <!-- currentTab=0 -->
+        <view class="lists-section" hidden="{{currentTab !==0 }}">
+            <template is="list-section" data="{{...list_s_tp}}"  />
+        </view>
+        <!-- currentTab=1 -->
+        <view class="lists-section" hidden="{{currentTab !==1 }}">
+            <template is="list-section" data="{{...list_h_tp}}"  />
+        </view>
+        <!-- currentTab=2 -->
+        <view class="lists-section" hidden="{{currentTab !==2 }}">
+            <template is="list-section" data="{{...list_sf_tp}}"  />
+        </view>
+    </view>
+    <!-- End 列表 -->
+</view>
